@@ -1,21 +1,20 @@
-* {
-	margin:  0;
-	padding: 0;
+{
+	margin: 0;
 	border: 0;
+	padding: 0;
 }
 
-main {
-	width: 100 vw;
-	height: 100 vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-#tablero{
-	width: 600px;
-	height: 600px ;
-	background-color: beige;
-	
-}
+#container {
+	width: 650px;
+	height: 600px; 
+	margin: 100px auto;
+	border: 20px hotpink;
+	background-color: darkred;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: "img1 . . . . img2"
+	                     ". centro centro centro centro . "
+	                     ". centro centro centro centro ."
+	                     ". centro centro centro centro ."
+	                     "img3 . . . . img4";
