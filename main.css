@@ -18,7 +18,8 @@
 	                     ". centro centro centro centro ."
 	                     ". centro centro centro centro ."
 	                     "img3 . . . . img4";
-	                 }
+}
+
 
 .div{background-color: darkred;
 	color: white;
@@ -28,7 +29,7 @@
 	padding-left: 20px;
 }
 	
-}
+
 .centro { background-color: orangered;
 	grid-area: centro;
 	padding-top: 20px;
@@ -56,10 +57,4 @@ img {
 
 .img4{
 	grid-area: img4;
-}
-
-@media screen and (max-width: 768px) {
-	.div {
-		background-color: orange;
-	}
 }
