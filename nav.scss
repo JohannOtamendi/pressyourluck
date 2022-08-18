@@ -1,0 +1,30 @@
+header {
+nav{
+ul{
+ display: flex;
+ justify-content: space-around;
+  a {flex-grow: 1;
+  li{
+	list-style:none;
+	padding: 16px;
+	text-align: center;
+	&:hover {
+	back-ground-color:azure;
+	cursor: pointer;
+
+	@media screen and (max-width:768px){
+	background-color:red;
+	}
+
+	@media screen and (max-width:425px){
+	background-color:yellow;
+} 
+   
+	}
+
+}
+}
+}
+	
+}
+}

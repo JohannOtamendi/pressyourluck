@@ -1,0 +1,20 @@
+@import "variables";
+@import "nav";
+
+#title {
+	font-size: $font-size;
+	border: $border;
+}
+
+.saludo {
+	justify-content:center;
+}
+
+button{
+	color: $color-button
+}
+
+.slide{
+	height:120px;
+	width:150px;
+}
