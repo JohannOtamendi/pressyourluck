@@ -1,0 +1,87 @@
+#ejemplo{
+    color: red;
+    border: 1px dashed pink;
+    animation-name: animation-example;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+}
+
+#gradual{
+    background-color: purple;
+    width: 600px;
+    height: 400px;
+    animation-name: crecer;
+    animation-duration: 10s;
+}
+ 
+#gradual:hover{
+animation-name: sobre;
+animation-iteration-count: infinite;
+}
+
+/* keyframe como se debe comportar cada parte de la animación, como un gif*/
+@keyframes animation-example{
+    from{background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes sobre {
+    from{
+        background-color: purple;
+    }
+    to{
+        background-color: blueviolet;
+    }
+}
+
+@keyframes crecer {
+    /* from{
+        widht:0;
+    }
+    to{
+        width: 0;
+    } */
+    0%{
+        width: 0;
+    }
+    25%{
+        width: 200px;
+        background-color: aquamarine;
+    }
+    50%{
+        width: 400px;
+    }
+    75%{
+        width: 500px;
+        background-color: black;
+    }
+
+}
+.contenedor-img{
+    width: 0;
+}
+
+.contenedor-img > img{
+    width: 100%;
+    height: 100%;
+}
+
+#control-img{
+    margin: 8px;
+    display: block;
+
+}
+#control-img:hover{
+    cursor: pointer;
+    animation-name: verimagen;
+    animation-duration: 2s;
+}
+
+@keyframes verimagen {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%
+    }
+}
